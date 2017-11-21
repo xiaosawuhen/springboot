@@ -18,14 +18,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     UserDetailsAuthenticationProvider userDetailsAuthenticationProvider;
 
     @Autowired
-    SecUserDetailsService userDetailsService;
+    SecUserService userDetailsService;
 	
     @Override
     protected void configure(HttpSecurity http) throws Exception {    
     
         http.authorizeRequests()
         		.anyRequest().authenticated()
-//        		.anyRequest().permitAll()
                 .and()
                 	.formLogin()
                 		.loginPage("/login")
@@ -40,8 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 		.logoutUrl("/logout")
                 .and()
                 	.sessionManagement()
-                		.maximumSessions(1)
-                		.expiredUrl("/expired")
+                	.maximumSessions(1)
+                	.expiredUrl("/expired")
                 .and()
                 .and().exceptionHandling().accessDeniedPage("/accessDenied")
         		.and().csrf().disable();

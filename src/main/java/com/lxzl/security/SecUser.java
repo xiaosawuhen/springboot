@@ -6,11 +6,8 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class SecUserDetails implements UserDetails {
-	
-	/**
-	 * 
-	 */
+public class SecUser implements UserDetails {
+
 	private static final long serialVersionUID = -1035679108334694438L;
 	
 	
@@ -24,7 +21,7 @@ public class SecUserDetails implements UserDetails {
 	private boolean enabled = true;
 	
 	
-	public SecUserDetails(String username, String password) {
+	public SecUser(String username, String password) {
 		this.username = username;
 		this.password = password;
 		this.authorities = new ArrayList<GrantedAuthority>();

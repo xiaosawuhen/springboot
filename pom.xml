@@ -9,7 +9,6 @@
 	<packaging>jar</packaging>
 
 	<name>SpringBoot</name>
-	<url>http://maven.apache.org</url>
 
     <!-- 继承父包 -->
     <parent>
@@ -57,49 +56,9 @@
 		    <artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
         
-<!--         <dependency>   -->
-<!--             <groupId>org.springframework.boot</groupId>   -->
-<!--             <artifactId>spring-boot-starter-security</artifactId>   -->
-<!--         </dependency>   -->
-        
-	    <dependency>
-	        <groupId>org.springframework.security</groupId>
-	        <artifactId>spring-security-web</artifactId>
-	        <version>3.2.4.RELEASE</version>
-	    </dependency>
-	    <dependency>
-	        <groupId>org.springframework.security</groupId>
-	        <artifactId>spring-security-config</artifactId>
-	        <version>3.2.4.RELEASE</version>
-	    </dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>3.2.4.RELEASE</version>
-		</dependency>
-		
+        <dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-security</artifactId>  
+        </dependency>  
 	    </dependencies>
-
-    <!--maven的插件-->
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-        
-    <!-- 配置java版本 不配置的话默认父类配置的是1.6-->
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-          </configuration>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
 </project>
