@@ -18,7 +18,7 @@ import com.lxzl.db.bean.User;
 import com.lxzl.service.UserService;
 
 @Component
-public class UserDetailsAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
+public class SecUserAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
 
     @Autowired  
     private UserService userService;

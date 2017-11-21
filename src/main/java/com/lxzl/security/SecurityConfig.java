@@ -15,7 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    UserDetailsAuthenticationProvider userDetailsAuthenticationProvider;
+    SecUserAuthenticationProvider userDetailsAuthenticationProvider;
 
     @Autowired
     SecUserService userDetailsService;
