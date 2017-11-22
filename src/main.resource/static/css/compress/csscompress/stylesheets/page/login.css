@@ -1,0 +1,103 @@
+/* line 6, ../../sass/page/header.scss */
+header image {
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
+}
+/* line 15, ../../sass/page/header.scss */
+header form {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  background-color: white;
+  opacity: 0.5;
+  width: 400px;
+  height: 300px;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* line 4, ../../sass/page/login.scss */
+.login-title {
+  width: 100%;
+  margin: auto;
+  background: #07fd07;
+  font-size: 35px;
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+/* line 10, ../../sass/page/login.scss */
+.login-title border {
+  radius: 10px 10px 0px 0px;
+}
+
+/* line 16, ../../sass/page/login.scss */
+.login-error {
+  font-size: 0.5em;
+  overflow-y: hidden;
+  height: 1.5em;
+}
+
+/* line 24, ../../sass/page/login.scss */
+.boody-content {
+  min-height: 250px;
+  margin: 20px 0px 20px 0px;
+}
+
+/* line 31, ../../sass/page/login.scss */
+.partner-ship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* line 39, ../../sass/page/login.scss */
+.partner {
+  border: 1.5px solid #07fd07;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+}
+
+/* line 46, ../../sass/page/login.scss */
+.submit-area {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+/* line 54, ../../sass/page/login.scss */
+.submit-area button {
+  width: 150px;
+  background: #07fd07;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+/* line 62, ../../sass/page/login.scss */
+.submit-area button:hover {
+  background: #0689e9;
+}
+
+/* line 67, ../../sass/page/login.scss */
+.username-area, .password-area {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+/* line 75, ../../sass/page/login.scss */
+.username-area label, .password-area label {
+  width: 50px;
+}
+
+/* line 80, ../../sass/page/login.scss */
+.rememberme-area {
+  display: flex;
+  align-items: center;
+}
+/* line 85, ../../sass/page/login.scss */
+.rememberme-area div {
+  left: 37px;
+  position: relative;
+}

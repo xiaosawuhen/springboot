@@ -1,0 +1,20 @@
+/* line 6, ../../sass/page/header.scss */
+header image {
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
+}
+/* line 15, ../../sass/page/header.scss */
+header form {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  background-color: white;
+  opacity: 0.5;
+  width: 400px;
+  height: 300px;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 10px;
+  text-align: center;
+}

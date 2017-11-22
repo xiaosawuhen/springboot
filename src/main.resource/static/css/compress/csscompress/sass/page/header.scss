@@ -1,0 +1,36 @@
+$headImgHeight:400px;
+$width100:100%;
+$baseBackGroundClolr:white;
+
+header {
+	image {
+		min:{
+			height:$headImgHeight;
+		}
+		max:{
+			height:$headImgHeight;
+		}
+		width:$width100;
+	}
+	form {
+	    position: absolute;
+	    left: 100px;
+	    top: 50px;
+		background: {
+			color: $baseBackGroundClolr;
+		}
+		opacity: 0.5;
+		width: 400px;
+		height: 300px;
+		max:{
+			width: 400px;
+			height: 300px;
+		}
+		border:{
+			radius: 10px;
+		}
+		text:{
+			align: center;
+		}
+	}
+}
