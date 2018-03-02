@@ -14,14 +14,17 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import com.lxzl.db.bean.Customer;
 import com.lxzl.db.bean.User;
+import com.lxzl.db.dao.CustomerDao;
+import com.lxzl.service.CustomerService;
 import com.lxzl.service.UserService;
 
 @Component
 public class SecUserAuthenticationProvider extends AbstractUserDetailsAuthenticationProvider {
 
     @Autowired  
-    private UserService userService;
+    private CustomerService customerService;
 	
 	@Override
 	protected void additionalAuthenticationChecks(UserDetails userDetails,
@@ -37,11 +40,11 @@ public class SecUserAuthenticationProvider extends AbstractUserDetailsAuthentica
 		}
 		
 		SecUser secUser = null;
-		User user = userService.findByUserName(username);
+		Customer customer = customerService.findByUserName(username);
 
 		try {
-			if(user != null){
-				secUser = new SecUser(user.getName(), user.getPassword());
+			if(customer != null){
+				secUser = new SecUser(customer.getName(), customer.getPassword());
 			} else {
 				throw new AuthenticationServiceException("user did not exist");
 			}

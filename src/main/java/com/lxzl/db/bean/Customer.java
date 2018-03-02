@@ -1,8 +1,6 @@
 package com.lxzl.db.bean;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,21 +8,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
- * Model class of 用户信息表.
+ * Model class of 客户表.
  * 
  */
 @Entity
-public class User implements Serializable {
+public class Customer implements Serializable {
 
 	/** serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
-	/** 用户ID. */
+	/** 客户ID. */
 	@Id
 	@GeneratedValue
-	private Long uid;
+	private Long id;
 
-	/** 名称. */
+	/** 客户名称. */
 	@Column(nullable=true)
 	private String name;
 
@@ -34,7 +32,7 @@ public class User implements Serializable {
 
 	/** 年龄. */
 	@Column(nullable=true)
-	private Short age;
+	private Integer age;
 
 	/** 手机号. */
 	@Column(nullable=true)
@@ -47,42 +45,42 @@ public class User implements Serializable {
 	/**
 	 * Constructor.
 	 */
-	public User() {
+	public Customer() {
 	}
 
 	/**
-	 * Set the 用户ID.
+	 * Set the 客户ID.
 	 * 
-	 * @param uid
-	 *            用户ID
+	 * @param id
+	 *            客户ID
 	 */
-	public void setUid(Long uid) {
-		this.uid = uid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	/**
-	 * Get the 用户ID.
+	 * Get the 客户ID.
 	 * 
-	 * @return 用户ID
+	 * @return 客户ID
 	 */
-	public Long getUid() {
-		return this.uid;
+	public Long getId() {
+		return this.id;
 	}
 
 	/**
-	 * Set the 名称.
+	 * Set the 客户名称.
 	 * 
 	 * @param name
-	 *            名称
+	 *            客户名称
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * Get the 名称.
+	 * Get the 客户名称.
 	 * 
-	 * @return 名称
+	 * @return 客户名称
 	 */
 	public String getName() {
 		return this.name;
@@ -113,7 +111,7 @@ public class User implements Serializable {
 	 * @param age
 	 *            年龄
 	 */
-	public void setAge(Short age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 
@@ -122,7 +120,7 @@ public class User implements Serializable {
 	 * 
 	 * @return 年龄
 	 */
-	public Short getAge() {
+	public Integer getAge() {
 		return this.age;
 	}
 
@@ -171,7 +169,7 @@ public class User implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((uid == null) ? 0 : uid.hashCode());
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
 
@@ -189,12 +187,12 @@ public class User implements Serializable {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		User other = (User) obj;
-		if (uid == null) {
-			if (other.uid != null) {
+		Customer other = (Customer) obj;
+		if (id == null) {
+			if (other.id != null) {
 				return false;
 			}
-		} else if (!uid.equals(other.uid)) {
+		} else if (!id.equals(other.id)) {
 			return false;
 		}
 		return true;

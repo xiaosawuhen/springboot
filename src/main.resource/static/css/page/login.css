@@ -1,103 +1,103 @@
-header {
+/* line 6, ../../sass/page/header.scss */
+header image {
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
 }
-
-header img {
-	min-height: 400px;
-	max-height: 400px;
-	width: 100%;
-}
-
+/* line 15, ../../sass/page/header.scss */
 header form {
-    position: absolute;
-    left: 100px;
-    top: 50px;
-	background-color: white;
-	opacity: 0.5;
-	width: 400px;
-	max-width:400px;
-	height: 300px;
-	max-height: 300px;
-	border-radius: 10px;
-	text-align: center;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  background-color: white;
+  opacity: 0.5;
+  width: 400px;
+  height: 320px;
+  max-width: 400px;
+  max-height: 320px;
+  border-radius: 10px;
+  text-align: center;
 }
 
+/* line 4, ../../sass/page/login.scss */
 .login-title {
-	width: 100%;
-	margin: auto;
-    background: #07fd07;
-    font-size: 35px;
-    padding: 10px 0px 0px 0px;
-    border-radius: 10px 10px 0px 0px;
-    margin: 0px 0px 20px 0px;
+  width: 100%;
+  margin: auto;
+  background: #07fd07;
+  font-size: 35px;
+  padding: 10px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+/* line 10, ../../sass/page/login.scss */
+.login-title border {
+  radius: 10px 10px 0px 0px;
 }
 
+/* line 16, ../../sass/page/login.scss */
 .login-error {
-	font-size: 0.5em;
-    overflow-y: hidden;
-    height: 1.5em;
+  font-size: 0.5em;
+  overflow-y: hidden;
+  height: 1.5em;
 }
 
-.username-area{
-	justify-content: center;
-    display: flex;
-    align-items: center;
+/* line 24, ../../sass/page/login.scss */
+.boody-content {
+  min-height: 250px;
+  margin: 20px 0px 20px 0px;
 }
 
-.username-area label {
-    width: 50px;
+/* line 31, ../../sass/page/login.scss */
+.partner-ship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.password-area{
-	justify-content: center;
-    display: flex;
-    align-items: center;
+/* line 39, ../../sass/page/login.scss */
+.partner {
+  border: 1.5px solid #07fd07;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
 }
 
-.password-area label {
-    width: 50px;
+/* line 46, ../../sass/page/login.scss */
+.submit-area {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-
-.rememberme-area{
-    display: flex;
-    align-items: center;
-}
-
-.rememberme-area div{
-    left: 37px;
-    position: relative;
-}
-
-.submit-area{
-	justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
+/* line 54, ../../sass/page/login.scss */
 .submit-area button {
-	width: 150px;
-    background: #07fd07;
-    color: black;
-    font-size: 20px;
-    font-weight: 900;
+  width: 150px;
+  background: #07fd07;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
 }
-.submit-area button:HOVER {
-    background: #0689e9;
-}
-
-.boody-content{
-	min-height: 250px;
-	margin: 20px 0px 20px 0px;
+/* line 62, ../../sass/page/login.scss */
+.submit-area button:hover {
+  background: #0689e9;
 }
 
-.partner-ship{
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-around;
+/* line 67, ../../sass/page/login.scss */
+.username-area, .password-area {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+/* line 75, ../../sass/page/login.scss */
+.username-area label, .password-area label {
+  width: 50px;
 }
 
-.partner{
-    border: 1.5px solid #07fd07;
-    height: 200px;
-    width: 400px;
-    border-radius: 10px;
+/* line 80, ../../sass/page/login.scss */
+.rememberme-area {
+  display: flex;
+  align-items: center;
+}
+/* line 85, ../../sass/page/login.scss */
+.rememberme-area div {
+  left: 37px;
+  position: relative;
 }

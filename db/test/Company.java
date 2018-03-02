@@ -1,8 +1,9 @@
-package com.lxzl.db.bean;
+package test;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -50,6 +51,8 @@ public class Company implements Serializable {
 	 * Constructor.
 	 */
 	public Company() {
+		this.companyinfoSet = new HashSet<Companyinfo>();
+		this.projectSet = new HashSet<Project>();
 	}
 
 	/**
@@ -183,6 +186,64 @@ public class Company implements Serializable {
 	 */
 	public String getDescription() {
 		return this.description;
+	}
+
+	/**
+	 * Set the set of the 公司信息表.
+	 * 
+	 * @param companyinfoSet
+	 *            The set of 公司信息表
+	 */
+	public void setCompanyinfoSet(Set<Companyinfo> companyinfoSet) {
+		this.companyinfoSet = companyinfoSet;
+	}
+
+	/**
+	 * Add the 公司信息表.
+	 * 
+	 * @param companyinfo
+	 *            公司信息表
+	 */
+	public void addCompanyinfo(Companyinfo companyinfo) {
+		this.companyinfoSet.add(companyinfo);
+	}
+
+	/**
+	 * Get the set of the 公司信息表.
+	 * 
+	 * @return The set of 公司信息表
+	 */
+	public Set<Companyinfo> getCompanyinfoSet() {
+		return this.companyinfoSet;
+	}
+
+	/**
+	 * Set the set of the 项目表.
+	 * 
+	 * @param projectSet
+	 *            The set of 项目表
+	 */
+	public void setProjectSet(Set<Project> projectSet) {
+		this.projectSet = projectSet;
+	}
+
+	/**
+	 * Add the 项目表.
+	 * 
+	 * @param project
+	 *            项目表
+	 */
+	public void addProject(Project project) {
+		this.projectSet.add(project);
+	}
+
+	/**
+	 * Get the set of the 项目表.
+	 * 
+	 * @return The set of 项目表
+	 */
+	public Set<Project> getProjectSet() {
+		return this.projectSet;
 	}
 
 	/**
