@@ -22,6 +22,8 @@ public class LoginController {
 		ModelAndView mv = new ModelAndView();
 		
 		Company company = companyService.findByName("lxzl");
+		
+		company = new Company();
 
 		mv.addObject(company);
 

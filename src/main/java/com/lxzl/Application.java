@@ -1,16 +1,12 @@
 package com.lxzl;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.lxzl.controller.LoginController;
 
 //@SpringBootApplication(exclude={DataSourceAutoConfiguration.class,HibernateJpaAutoConfiguration.class})
 @SpringBootApplication()
-@EnableAutoConfiguration()
-public class Runner {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(Runner.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
